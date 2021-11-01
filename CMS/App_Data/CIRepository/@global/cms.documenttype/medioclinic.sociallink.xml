@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>MedioClinic</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Social link</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="SocialLinkID" columntype="integer" guid="d322b8d0-f13a-4eb7-9227-5e00b75336f8" isPK="true">
+        <properties>
+          <fieldcaption>SocialLinkID</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="Icon" columntype="file" guid="a07c7fc6-548a-427b-9d21-962757f7b098" visible="true">
+        <properties>
+          <fieldcaption>Icon</fieldcaption>
+        </properties>
+        <settings>
+          <Allowed_Extensions>gif;jpg;jpeg;png</Allowed_Extensions>
+          <controlname>DirectUploadControl</controlname>
+          <Extensions>custom</Extensions>
+        </settings>
+      </field>
+      <field allowempty="true" column="Url" columnsize="200" columntype="text" guid="33664f59-fffd-4753-846d-64513fc6c1dc" visible="true">
+        <properties>
+          <fieldcaption>URL</fieldcaption>
+        </properties>
+        <settings>
+          <Autoresize>
+<![CDATA[
+<AutoResize>
+  <autoresize>noresize</autoresize>
+  <autoresize_width />
+  <autoresize_height />
+  <autoresize_maxsidesize />
+</AutoResize>
+]]>
+          </Autoresize>
+          <Configuration>True</Configuration>
+          <controlname>URLSelector</controlname>
+          <Dialogs_Attachments_Hide>True</Dialogs_Attachments_Hide>
+          <Dialogs_Content_Hide>True</Dialogs_Content_Hide>
+          <Dialogs_Content_Site>##all##</Dialogs_Content_Site>
+          <Dialogs_Libraries_Hide>True</Dialogs_Libraries_Hide>
+          <Dialogs_Libraries_Site>##all##</Dialogs_Libraries_Site>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>37960eb6-03b4-416a-8868-4ac1d8afbdbd</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>False</ClassHasURL>
+  <ClassIconClass>icon-engage-users</ClassIconClass>
+  <ClassInheritsFromClassID>0</ClassInheritsFromClassID>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>False</ClassIsNavigationItem>
+  <ClassName>MedioClinic.SocialLink</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>MedioClinic_SocialLink</ClassTableName>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

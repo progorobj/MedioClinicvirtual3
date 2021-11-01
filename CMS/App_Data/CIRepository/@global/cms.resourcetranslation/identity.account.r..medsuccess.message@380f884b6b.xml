@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcetranslation>
+  <Parent>
+    <CodeName>Identity.Account.Register.ConfirmedSuccess.Message</CodeName>
+    <GUID>9d8e2fd2-92e8-453b-ab45-0ae7e4969eea</GUID>
+    <ObjectType>cms.resourcestring</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="cms.culture_en-US">
+      <TranslationCultureID>
+        <CodeName>en-US</CodeName>
+        <GUID>4c98fdfa-841b-431e-9bc8-9fc80800ee45</GUID>
+        <ObjectType>cms.culture</ObjectType>
+      </TranslationCultureID>
+      <TranslationText>
+        <![CDATA[Thank you for registering at Medio Clinic! Please check your mailbox and click the confirmation link in the message we've just sent to you.]]>
+      </TranslationText>
+    </Binding>
+    <Binding id="cms.culture_es-ES">
+      <TranslationCultureID>
+        <CodeName>es-ES</CodeName>
+        <GUID>61218e2e-2dc3-4a1c-9ac3-e40fb672e2f2</GUID>
+        <ObjectType>cms.culture</ObjectType>
+      </TranslationCultureID>
+      <TranslationText>
+        <![CDATA[¡Gracias por registrarse en Medio Clinic! Por favor revise su buzón y haga clic en el enlace de confirmación en el mensaje que le acabamos de enviar.]]>
+      </TranslationText>
+    </Binding>
+  </Bindings>
+</cms.resourcetranslation>

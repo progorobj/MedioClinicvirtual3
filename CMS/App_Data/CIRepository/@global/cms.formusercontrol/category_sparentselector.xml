@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.formusercontrol>
+  <UserControlCodeName>Category_sParentSelector</UserControlCodeName>
+  <UserControlDescription />
+  <UserControlDisplayName>
+    <![CDATA[Category's parent selector]]>
+  </UserControlDisplayName>
+  <UserControlFileName>
+    <![CDATA[~/CMSModules/Categories/Controls/SelectCategory.ascx]]>
+  </UserControlFileName>
+  <UserControlForBinary>False</UserControlForBinary>
+  <UserControlForBoolean>False</UserControlForBoolean>
+  <UserControlForDateTime>False</UserControlForDateTime>
+  <UserControlForDecimal>False</UserControlForDecimal>
+  <UserControlForDocAttachments>False</UserControlForDocAttachments>
+  <UserControlForDocRelationships>False</UserControlForDocRelationships>
+  <UserControlForFile>False</UserControlForFile>
+  <UserControlForGuid>False</UserControlForGuid>
+  <UserControlForInteger>True</UserControlForInteger>
+  <UserControlForLongText>False</UserControlForLongText>
+  <UserControlForText>False</UserControlForText>
+  <UserControlGUID>98d48ce0-1ea6-4439-8982-22cb543cda69</UserControlGUID>
+  <UserControlIsSystem>False</UserControlIsSystem>
+  <UserControlParameters>
+    <form version="2">
+      <field allowempty="true" column="ExcludeCategoryID" columntype="integer" guid="826f9077-f601-40dc-9d3f-fc9a648c5d5f">
+        <properties>
+          <defaultvalue ismacro="true">
+            <![CDATA[{%EditedObject.ID|(identity)GlobalAdministrator|(hash)780910052235d3f803d7c6771ce2c78f855e009b3b39daed4b72eca93a82ec0b%}]]>
+          </defaultvalue>
+        </properties>
+      </field>
+      <field allowempty="true" column="AddRootRecord" columntype="boolean" guid="0494b417-641b-4fa0-aba4-8e876f63b92e" visible="true">
+        <properties>
+          <defaultvalue>true</defaultvalue>
+          <fieldcaption>Add root record</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>checkboxcontrol</controlname>
+        </settings>
+      </field>
+      <field allowempty="true" column="DisableSiteCategories" columntype="boolean" guid="d5655f86-5332-4d82-9fab-576b57d846d9">
+        <properties>
+          <defaultvalue ismacro="true">
+            <![CDATA[{%EditedObject.CategorySiteID == null|(identity)GlobalAdministrator|(hash)5051f0bff3187e39017befa09d8cbf714095d25f7075afe9c27afdc5058d1b93%}]]>
+          </defaultvalue>
+        </properties>
+      </field>
+      <field allowempty="true" column="AllowDisabledCategories" columntype="boolean" guid="fe7e50dc-0d1e-4781-b246-fb0a2ad1e3e3">
+        <properties>
+          <defaultvalue>false</defaultvalue>
+        </properties>
+      </field>
+    </form>
+  </UserControlParameters>
+  <UserControlPriority>0</UserControlPriority>
+  <UserControlShowInCustomTables>False</UserControlShowInCustomTables>
+  <UserControlShowInDocumentTypes>False</UserControlShowInDocumentTypes>
+  <UserControlShowInReports>False</UserControlShowInReports>
+  <UserControlShowInSystemTables>False</UserControlShowInSystemTables>
+  <UserControlShowInWebParts>False</UserControlShowInWebParts>
+</cms.formusercontrol>

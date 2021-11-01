@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcestring>
+  <StringGUID>9d8e2fd2-92e8-453b-ab45-0ae7e4969eea</StringGUID>
+  <StringIsCustom>True</StringIsCustom>
+  <StringKey>Identity.Account.Register.ConfirmedSuccess.Message</StringKey>
+</cms.resourcestring>

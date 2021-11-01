@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>MedioClinic</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Home page</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="HomePageID" columntype="integer" guid="2a33ceb1-ec1c-4be0-9b05-aac75399bcc1" isPK="true">
+        <properties>
+          <fieldcaption>HomePageID</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="DoctorsLinkButtonText" columnsize="50" columntype="text" guid="6cad13c1-0415-457a-aa92-9b2550bfdbca" visible="true">
+        <properties>
+          <fieldcaption>Doctors link button text</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="ServicesLinkButtonText" columnsize="50" columntype="text" guid="6701aecb-83e3-42ff-98b7-cae74323e45a" visible="true">
+        <properties>
+          <fieldcaption>Services link button text</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="DoctorsLink" columntype="docrelationships" guid="a7d70f83-4ba9-43b8-b374-46f8b8b6573f" visible="true">
+        <properties>
+          <fieldcaption>Doctors link</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>Pages</controlname>
+          <RelatedPagesLimit>1</RelatedPagesLimit>
+          <StartingPath>/</StartingPath>
+        </settings>
+      </field>
+      <field allowempty="true" column="Perex" columnsize="200" columntype="text" guid="231c2af0-b891-45b3-a792-e8af46279cd1" isinherited="true" visible="true">
+        <properties>
+          <fieldcaption>Perex</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextBoxControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Trim>False</Trim>
+        </settings>
+      </field>
+      <field allowempty="true" column="Text" columntype="longtext" guid="2c262668-0e32-40cb-8483-d006b9785dfd" isinherited="true" visible="true">
+        <properties>
+          <fieldcaption>Text</fieldcaption>
+        </properties>
+        <settings>
+          <controlname>HtmlAreaControl</controlname>
+          <Dialogs_Content_Hide>False</Dialogs_Content_Hide>
+          <HeightUnitType>PX</HeightUnitType>
+          <MediaDialogConfiguration>True</MediaDialogConfiguration>
+          <ShowAddStampButton>False</ShowAddStampButton>
+          <WidthUnitType>PX</WidthUnitType>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>0465f510-d4b4-4993-ab63-0628c44daa74</ClassGUID>
+  <ClassHasMetadata>True</ClassHasMetadata>
+  <ClassHasURL>True</ClassHasURL>
+  <ClassIconClass>icon-home</ClassIconClass>
+  <ClassInheritsFromClassID>
+    <CodeName>MedioClinic.NamePerexText</CodeName>
+    <GUID>c6a8f617-f96a-47b8-a13c-2b297fc97c9c</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </ClassInheritsFromClassID>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>True</ClassIsNavigationItem>
+  <ClassName>MedioClinic.HomePage</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>MedioClinic_HomePage</ClassTableName>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

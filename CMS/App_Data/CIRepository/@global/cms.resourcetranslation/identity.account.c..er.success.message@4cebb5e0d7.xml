@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcetranslation>
+  <Parent>
+    <CodeName>Identity.Account.ConfirmUser.Success.Message</CodeName>
+    <GUID>246817bd-b0cd-4ea9-8725-838f43225803</GUID>
+    <ObjectType>cms.resourcestring</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="cms.culture_en-US">
+      <TranslationCultureID>
+        <CodeName>en-US</CodeName>
+        <GUID>4c98fdfa-841b-431e-9bc8-9fc80800ee45</GUID>
+        <ObjectType>cms.culture</ObjectType>
+      </TranslationCultureID>
+      <TranslationText>
+        <![CDATA[Your registration was successfull. You can now <a href="{0}">sign in</a> to your account.]]>
+      </TranslationText>
+    </Binding>
+    <Binding id="cms.culture_es-ES">
+      <TranslationCultureID>
+        <CodeName>es-ES</CodeName>
+        <GUID>61218e2e-2dc3-4a1c-9ac3-e40fb672e2f2</GUID>
+        <ObjectType>cms.culture</ObjectType>
+      </TranslationCultureID>
+      <TranslationText>
+        <![CDATA[Tu registro fue exitoso. Ahora puede <a href="{0}">iniciar sesión</a> en su cuenta.]]>
+      </TranslationText>
+    </Binding>
+  </Bindings>
+</cms.resourcetranslation>

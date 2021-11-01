@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>MedioClinic</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Company service</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="CompanyServiceID" columntype="integer" guid="832b6ed6-c71d-4509-9aa3-7770213a277c" isPK="true">
+        <properties>
+          <fieldcaption>CompanyServiceID</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="ServiceDescription" columntype="longtext" guid="c9a83419-77f1-4dd1-ac28-d2a30be0ea35" visible="true">
+        <properties>
+          <fieldcaption>Service description</fieldcaption>
+        </properties>
+        <settings>
+          <AutoCompleteEnableCaching>False</AutoCompleteEnableCaching>
+          <AutoCompleteFirstRowSelected>False</AutoCompleteFirstRowSelected>
+          <AutoCompleteShowOnlyCurrentWordInCompletionListItem>False</AutoCompleteShowOnlyCurrentWordInCompletionListItem>
+          <controlname>TextAreaControl</controlname>
+          <FilterMode>False</FilterMode>
+          <Rows>10</Rows>
+          <Wrap>True</Wrap>
+        </settings>
+      </field>
+      <field allowempty="true" column="Icon" columntype="file" guid="ee90f8d8-518a-49de-8747-185d0100eb27" visible="true">
+        <properties>
+          <fieldcaption>Icon</fieldcaption>
+        </properties>
+        <settings>
+          <Allowed_Extensions>png;gif</Allowed_Extensions>
+          <controlname>DirectUploadControl</controlname>
+          <Extensions>custom</Extensions>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>a337726b-f44c-4057-8e06-50c2c18f5cec</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>False</ClassHasURL>
+  <ClassIconClass>icon-money-bill</ClassIconClass>
+  <ClassInheritsFromClassID>0</ClassInheritsFromClassID>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>False</ClassIsNavigationItem>
+  <ClassName>MedioClinic.CompanyService</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>MedioClinic_CompanyService</ClassTableName>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

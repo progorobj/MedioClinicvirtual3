@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>MedioClinic</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>User</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="UserID" columntype="integer" guid="1abf91e2-617f-4a24-8dc1-e108f33ca0e2" isPK="true">
+        <properties>
+          <fieldcaption>UserID</fieldcaption>
+        </properties>
+      </field>
+      <field allowempty="true" column="UserAccount" columntype="integer" guid="49b135f6-85d7-4268-b623-23b3b86750ae" visible="true">
+        <properties>
+          <fieldcaption>User account</fieldcaption>
+        </properties>
+        <settings>
+          <AlwaysShowGlobalAdministrators>False</AlwaysShowGlobalAdministrators>
+          <controlname>UserSelector</controlname>
+          <HideDisabledUsers>True</HideDisabledUsers>
+          <HideHiddenUsers>False</HideHiddenUsers>
+          <HideNonApprovedUsers>True</HideNonApprovedUsers>
+          <SelectionMode>0</SelectionMode>
+          <ShowSiteFilter>True</ShowSiteFilter>
+        </settings>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>da426c5d-d2ba-4cd7-a91c-ee69702c7689</ClassGUID>
+  <ClassHasMetadata>False</ClassHasMetadata>
+  <ClassHasURL>False</ClassHasURL>
+  <ClassIconClass>icon-user-checkbox</ClassIconClass>
+  <ClassInheritsFromClassID>
+    <CodeName>MedioClinic.BasicPage</CodeName>
+    <GUID>9d9e7b5a-c3bb-4000-ac27-611b28a55ad9</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </ClassInheritsFromClassID>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>False</ClassIsNavigationItem>
+  <ClassName>MedioClinic.User</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>MedioClinic_User</ClassTableName>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

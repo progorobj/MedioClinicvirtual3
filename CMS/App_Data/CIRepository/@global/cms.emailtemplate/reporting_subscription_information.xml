@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.emailtemplate>
+  <EmailTemplateBcc />
+  <EmailTemplateCc />
+  <EmailTemplateDisplayName>Reporting - Subscription confirmation</EmailTemplateDisplayName>
+  <EmailTemplateFrom />
+  <EmailTemplateGUID>8a4938c3-ef94-4bec-b4c9-0a8ecbab8d79</EmailTemplateGUID>
+  <EmailTemplateName>Reporting_Subscription_information</EmailTemplateName>
+  <EmailTemplatePlainText>
+<![CDATA[
+{%ReportSubscription.ReportSubscriptionSubject|(identity)GlobalAdministrator|(hash)9531775f0bd0eec11607b6da62c8bd60189946a8a392b81aa240bf4dd22753ee%}
+
+You have been successfully subscribed to {%ItemName%} report {%Report.ReportDisplayName |(identity)GlobalAdministrator|(hash)b1c46d3eba9d62b8d69f0bd1c93562d388a38bf6683edf6ebbac5c20fe90b754%}.
+
+Click here to unsubscribe:
+{%UnsubscriptionLink%}
+]]>
+  </EmailTemplatePlainText>
+  <EmailTemplateSubject>Report subscription information</EmailTemplateSubject>
+  <EmailTemplateText>
+<![CDATA[
+<html>
+	<head>
+	  <style>
+		BODY, TD
+		{
+		  font-size: 12px; 
+		  font-family: arial
+		}
+	  </style>   
+	</head>	
+	<body>
+      <h3>{%ReportSubscription.ReportSubscriptionSubject|(identity)GlobalAdministrator|(hash)9531775f0bd0eec11607b6da62c8bd60189946a8a392b81aa240bf4dd22753ee%}</h3>
+	<p>
+        You have been successfully subscribed to {%ItemName%}		
+       report <strong> {%Report.ReportDisplayName |(identity)GlobalAdministrator|(hash)b1c46d3eba9d62b8d69f0bd1c93562d388a38bf6683edf6ebbac5c20fe90b754%} </strong>.
+	<p/>
+	<p>
+      <a href="{%UnsubscriptionLink%}">Click here to unsubscribe</a>
+	</p>
+	</body>
+</html>
+
+]]>
+  </EmailTemplateText>
+  <EmailTemplateType>reporting</EmailTemplateType>
+</cms.emailtemplate>

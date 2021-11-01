@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcestring>
+  <StringGUID>855b4d44-ec5c-4c28-9d2e-81b63aac656b</StringGUID>
+  <StringIsCustom>True</StringIsCustom>
+  <StringKey>Identity.Account.ConfirmUser.AvatarFailure.Message</StringKey>
+</cms.resourcestring>

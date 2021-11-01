@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.documenttype>
+  <ClassCodeGenerationSettings>
+    <Data>
+      <NameSpace>MedioClinic</NameSpace>
+    </Data>
+  </ClassCodeGenerationSettings>
+  <ClassDisplayName>Site section</ClassDisplayName>
+  <ClassFormDefinition>
+    <form version="2">
+      <field column="SiteSectionID" columntype="integer" guid="09716bc5-a927-48f3-a08a-31dd101430fd" isPK="true">
+        <properties>
+          <fieldcaption>SiteSectionID</fieldcaption>
+        </properties>
+      </field>
+      <field column="SiteSectionName" columntype="text" guid="09716bc5-a927-48f3-a08a-31dd101430fe" allowempty="true">
+        <properties>
+          <fieldcaption>SiteSectionName</fieldcaption>
+        </properties>
+      </field>
+    </form>
+  </ClassFormDefinition>
+  <ClassGUID>60b77a45-da65-430f-bf96-b9532efbc23c</ClassGUID>
+  <ClassHasMetadata>True</ClassHasMetadata>
+  <ClassHasURL>True</ClassHasURL>
+  <ClassIconClass>icon-parent-children-scheme-3</ClassIconClass>
+  <ClassInheritsFromClassID>
+    <CodeName>MedioClinic.BasicPage</CodeName>
+    <GUID>9d9e7b5a-c3bb-4000-ac27-611b28a55ad9</GUID>
+    <ObjectType>cms.documenttype</ObjectType>
+  </ClassInheritsFromClassID>
+  <ClassIsCoupledClass>True</ClassIsCoupledClass>
+  <ClassIsCustomTable>False</ClassIsCustomTable>
+  <ClassIsDocumentType>True</ClassIsDocumentType>
+  <ClassIsForm>False</ClassIsForm>
+  <ClassIsNavigationItem>True</ClassIsNavigationItem>
+  <ClassName>MedioClinic.SiteSection</ClassName>
+  <ClassNodeNameSource />
+  <ClassSearchSettings>
+    <search />
+  </ClassSearchSettings>
+  <ClassShowAsSystemTable>False</ClassShowAsSystemTable>
+  <ClassTableName>MedioClinic_SiteSection</ClassTableName>
+  <ClassUsePublishFromTo>True</ClassUsePublishFromTo>
+  <ClassUsesPageBuilder>False</ClassUsesPageBuilder>
+  <ClassUsesVersioning>False</ClassUsesVersioning>
+</cms.documenttype>

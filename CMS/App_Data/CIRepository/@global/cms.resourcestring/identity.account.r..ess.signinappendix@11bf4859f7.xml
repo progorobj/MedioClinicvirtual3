@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcestring>
+  <StringGUID>d078d257-9db7-4802-924e-1d41368cd1c5</StringGUID>
+  <StringIsCustom>True</StringIsCustom>
+  <StringKey>
+    <![CDATA[Identity.Account.ResetPassword.Success.SignInAppendix]]>
+  </StringKey>
+</cms.resourcestring>

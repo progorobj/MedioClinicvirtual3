@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.avatar>
+  <AvatarFileExtension>.png</AvatarFileExtension>
+  <AvatarFileName>jon-snow-avatar.png</AvatarFileName>
+  <AvatarFileSize>113976</AvatarFileSize>
+  <AvatarGUID>0f6db822-890e-48d3-b6c1-abe0666938fb</AvatarGUID>
+  <AvatarImageHeight>270</AvatarImageHeight>
+  <AvatarImageWidth>360</AvatarImageWidth>
+  <AvatarMimeType>image/png</AvatarMimeType>
+  <AvatarName>custom JonSnow</AvatarName>
+</cms.avatar>

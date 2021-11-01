@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcestring>
+  <StringGUID>f44bfdae-7f5a-4378-9444-e90368626f03</StringGUID>
+  <StringIsCustom>True</StringIsCustom>
+  <StringKey>Identity.Account.Register.Failure.Message</StringKey>
+</cms.resourcestring>

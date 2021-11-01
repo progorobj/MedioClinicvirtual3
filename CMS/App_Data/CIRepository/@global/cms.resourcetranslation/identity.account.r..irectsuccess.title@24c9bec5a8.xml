@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.resourcetranslation>
+  <Parent>
+    <CodeName>Identity.Account.Register.DirectSuccess.Title</CodeName>
+    <GUID>020d8e27-7fad-48b4-8027-a41c0dbdb4f2</GUID>
+    <ObjectType>cms.resourcestring</ObjectType>
+  </Parent>
+  <Bindings>
+    <Binding id="cms.culture_en-US">
+      <TranslationCultureID>
+        <CodeName>en-US</CodeName>
+        <GUID>4c98fdfa-841b-431e-9bc8-9fc80800ee45</GUID>
+        <ObjectType>cms.culture</ObjectType>
+      </TranslationCultureID>
+      <TranslationText>
+        <![CDATA[You're registered]]>
+      </TranslationText>
+    </Binding>
+  </Bindings>
+</cms.resourcetranslation>

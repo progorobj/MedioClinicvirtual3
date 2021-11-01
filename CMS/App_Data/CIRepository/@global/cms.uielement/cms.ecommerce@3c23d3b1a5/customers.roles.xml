@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cms.uielement>
+  <ElementCaption>{$general.roles$}</ElementCaption>
+  <ElementCheckModuleReadPermission>False</ElementCheckModuleReadPermission>
+  <ElementDisplayName>{$general.roles$}</ElementDisplayName>
+  <ElementFromVersion>8.0</ElementFromVersion>
+  <ElementGUID>d3ff36d2-e783-4312-93a7-073220e8308c</ElementGUID>
+  <ElementIconClass />
+  <ElementIsCustom>False</ElementIsCustom>
+  <ElementIsGlobalApplication>False</ElementIsGlobalApplication>
+  <ElementIsMenu>False</ElementIsMenu>
+  <ElementName>Customers.Roles</ElementName>
+  <ElementOrder>5</ElementOrder>
+  <ElementParentID>
+    <CodeName>EditCustomersProperties</CodeName>
+    <GUID>cfd09dee-953d-4b33-9511-30742faa3570</GUID>
+    <ObjectType>cms.uielement</ObjectType>
+    <Parent>
+      <CodeName>CMS.Ecommerce</CodeName>
+      <GUID>684e021b-8b56-4cbf-8fd5-b7a791fd2dbc</GUID>
+      <ObjectType>cms.resource</ObjectType>
+    </Parent>
+  </ElementParentID>
+  <ElementProperties>
+    <data>
+      <category_name_header>False</category_name_header>
+      <bindingobjecttype>cms.Role</bindingobjecttype>
+      <checkmodifypermission>True</checkmodifypermission>
+      <objectid>
+        <![CDATA[{%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fc4b2afded03714a09a57f22150034ad1c58e82544f60593480cdb1031024e7b%}]]>
+      </objectid>
+      <objecttype>cms.user</objecttype>
+      <bindingobjectprovidertype>cms.UserRole</bindingobjectprovidertype>
+      <displaybreadcrumbs>False</displaybreadcrumbs>
+      <listprefacetext ismacro="True">
+<![CDATA[
+Obj: {%EditedObject%}<br>
+Parent: {%EditedObjectParent%}<br>
+UserID: {%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fc4b2afded03714a09a57f22150034ad1c58e82544f60593480cdb1031024e7b%}<br>
+]]>
+      </listprefacetext>
+      <wherecondition>
+        <![CDATA[UserID={%EditedObjectParent.CustomerUserID|(identity)GlobalAdministrator|(hash)fc4b2afded03714a09a57f22150034ad1c58e82544f60593480cdb1031024e7b%}]]>
+      </wherecondition>
+      <category_name_custom>False</category_name_custom>
+      <includejquery>False</includejquery>
+    </data>
+  </ElementProperties>
+  <ElementRequiresGlobalAdminPriviligeLevel>False</ElementRequiresGlobalAdminPriviligeLevel>
+  <ElementResourceID>
+    <CodeName>CMS.Ecommerce</CodeName>
+    <GUID>684e021b-8b56-4cbf-8fd5-b7a791fd2dbc</GUID>
+    <ObjectType>cms.resource</ObjectType>
+  </ElementResourceID>
+  <ElementSize>0</ElementSize>
+  <ElementTargetURL>
+    <![CDATA[~/CMSModules/Membership/Pages/Users/User_Edit_Roles.aspx?userId={%EditedObject.CustomerUserID|(identity)GlobalAdministrator|(hash)33754e80dba276c33b44320cc1c22d0a471e6ac5371eaf1469cc2268d976375e%}]]>
+  </ElementTargetURL>
+  <ElementType>Url</ElementType>
+  <ElementVisibilityCondition>
+    <![CDATA[{%(CurrentUser.IsAuthorizedPerResource("CMS.Users","Read")) && EditedObject.CustomerIsRegistered|(identity)GlobalAdministrator|(hash)757720937a974f733807f4bb0786bb7bb8409f1b2072058c26b6f8448f754859%}]]>
+  </ElementVisibilityCondition>
+</cms.uielement>
