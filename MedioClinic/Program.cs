@@ -25,5 +25,6 @@ namespace BlankSiteCore
                     webBuilder.UseStartup<Startup>();
                 });
 
+
     }
 }
