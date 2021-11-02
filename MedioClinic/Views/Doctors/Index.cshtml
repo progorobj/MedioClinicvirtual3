@@ -1,0 +1,47 @@
+﻿@using XperienceAdapter.Models
+@using Business.Models
+@using Kentico.Membership.Web.Mvc
+@model PageViewModel<(string Name, IEnumerable<Doctor> Doctors)>
+@inject Microsoft.Extensions.Options.IOptions<Core.Configuration.XperienceOptions> Options
+
+@{
+    var outputCacheEnabled = false;
+
+    // TODO: Handle reordered child nodes.
+    var cacheDependencyKeys = new[] { $"node|{Options.Value.SiteCodeName}|/Doctors|childnodes" };
+}
+
+<cache expires-sliding="@TimeSpan.FromMinutes(5)" vary-by-culture="true" enabled="@outputCacheEnabled">
+    <cache-dependency cache-keys="@cacheDependencyKeys" enabled="@outputCacheEnabled" />
+    <main class="row mc-page-fixed">
+        <section class="container row section">
+            <h1>@Html.DisplayFor(m => m.Data.Name)</h1>
+            <div class="mc-flex-container">
+                @if (Model?.Data.Doctors?.Any() == true)
+                {
+                    foreach (var doctor in Model.Data.Doctors)
+                    {
+                        if (doctor != null)
+                        {
+                            var pictureUrl = Url.Kentico().AvatarUrl(doctor.UserName);
+                            <section class="mc-flex-item-360px">
+                                <div class="card mc-margin-1rem">
+                                    <div class="card-image">
+                                        <img src="@pictureUrl" alt="@Html.DisplayFor(m => doctor.Name)" />
+                                        <span class="card-title black-text">@Html.DisplayFor(m => doctor.Name)</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>@Html.DisplayFor(m => doctor.Specialty)</p>
+                                    </div>
+                                    <div class="card-action">
+                                        <a href="@Html.Raw(doctor.DoctorDetailUrl)">Detail</a>
+                                    </div>
+                                </div>
+                            </section>
+                        }
+                    }
+                }
+            </div>
+        </section>
+    </main>
+</cache>

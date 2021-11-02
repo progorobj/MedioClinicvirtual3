@@ -1,0 +1,56 @@
+﻿@using Business.Models
+@model PageViewModel<(HomePage HomePage, IEnumerable<CompanyService> CompanyServices)>
+
+@{
+    string? backgroundLeft, backgroundRight;
+    backgroundLeft = backgroundRight = default;
+    var attachments = Model?.Data.HomePage?.Attachments;
+
+    if (attachments?.Any() == true)
+    {
+        backgroundLeft = attachments.FirstOrDefault(attachment => attachment?.FileName?.Contains("background-left") == true)?.AttachmentUrl?.RelativePath;
+        backgroundRight = attachments.FirstOrDefault(attachment => attachment?.FileName?.Contains("background-right") == true)?.AttachmentUrl?.RelativePath;
+    }
+}
+
+<header class="row mc-page-fold-left" style="background-image:url(@backgroundLeft)">
+    <div class="container mc-section-3">
+        <div class="col xl4 offset-xl8 l7 offset-l5 m9 offset-m3 s12">
+            <h1>@Html.DisplayFor(m => m.Data.HomePage.Perex)</h1>
+            <section class="mc-section-2 flow-text">
+                <strong>@Html.DisplayFor(m => m.Data.HomePage.Text)</strong>
+            </section>
+            <section class="section">
+                <p>
+                    <a class="waves-effect waves-light btn" href="@Url.Content(Model?.Data.HomePage?.DoctorsUrl)">@Html.DisplayFor(m => m.Data.HomePage.DoctorsLinkButtonText)</a>
+                </p>
+                <p>
+                    <a class="waves-effect waves-light btn" href="#services">
+                        <i class="material-icons right">keyboard_arrow_down</i>
+                        @Html.DisplayFor(m => m.Data.HomePage.ServicesLinkButtonText)
+                    </a>
+                </p>
+            </section>
+        </div>
+    </div>
+</header>
+<main class="row mc-page-fold-left" style="background-image:url(@backgroundRight)">
+    <div class="container mc-section-4">
+        <h2 id="services" class="hide-on-med-and-down">@Html.DisplayFor(m => m.Data.HomePage.ServicesLinkButtonText)</h2>
+        @if (Model?.Data.CompanyServices?.Any() == true)
+        {
+            foreach (var service in Model.Data.CompanyServices)
+            {
+                <section class="row section">
+                    <div class="col xl5 l9 m12 s12">
+                        <div class="card-panel white center">
+                            <img src="@service.IconUrl?.AbsoluteUrl" alt="@Html.DisplayFor(m => service.Name)" />
+                            <h3>@Html.DisplayFor(m => service.Name)</h3>
+                            <p>@Html.DisplayFor(m => service.ServiceDescription)</p>
+                        </div>
+                    </div>
+                </section>
+            }
+        }
+    </div>
+</main>
