@@ -1,0 +1,110 @@
+﻿@import "../lib/materialize-src/sass/components/_color-variables.scss";
+@import "../lib/materialize-src/sass/components/_variables.scss";
+
+.white-text a {
+    color: white !important;
+}
+
+$extra-large-and-down: "only screen and (max-width : #{$large-screen-up})" !default;
+
+@mixin section($padding) {
+    padding-bottom: $padding;
+    padding-top: $padding;
+}
+
+@mixin flex-item($basis, $margin) {
+    flex-basis: $basis;
+    margin: $margin;
+}
+
+@media #{$extra-large-and-up} {
+    .mc-extra-large-and-up {
+        display: block;
+    }
+
+    .mc-extra-large-and-down {
+        display: none;
+    }
+}
+
+@media #{$extra-large-and-down} {
+    .mc-extra-large-and-up {
+        display: none;
+    }
+
+    .mc-extra-large-and-down {
+        display: block;
+    }
+}
+
+%mc-page-base {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.mc-page-fixed {
+    @extend %mc-page-base;
+    background-position: center center;
+}
+
+.mc-page-fold-left {
+    @extend %mc-page-base;
+    background-position: right top;
+}
+
+.mc-page-fold-right {
+    @extend %mc-page-base;
+    background-position: left top;
+}
+
+
+.mc-section-2 {
+    @include section(2rem);
+}
+
+.mc-section-3 {
+    @include section(3rem);
+}
+
+.mc-section-4 {
+    @include section(4rem);
+}
+
+.mc-opacity-95 {
+    opacity: 0.95;
+}
+
+.mc-logo {
+    height: 40px;
+    margin: 12px;
+}
+
+.mc-logo-text {
+    font-size: 1.3rem;
+    vertical-align: top;
+}
+
+.mc-user-message {
+    padding: 1rem;
+}
+
+.mc-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.mc-flex-item-360px {
+    @include flex-item(360px, auto)
+}
+
+.mc-margin-1rem {
+    margin: 1rem;
+}
+
+.mc-map {
+    height: 500px;
+}

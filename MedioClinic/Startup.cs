@@ -19,7 +19,7 @@ namespace MedioClinic
     public class Startup
     {
         public IWebHostEnvironment Environment { get; }
-
+        private const string ConventionalRoutingControllers = "Error|ImageUploader|MediaLibraryUploader|FormTest|Account|Profile";
         public AutoFacConfig AutoFacConfig => new AutoFacConfig();
         public IConfigurationSection? Options { get; }
         public Startup(IWebHostEnvironment environment, IConfiguration configuration)
@@ -120,11 +120,14 @@ namespace MedioClinic
             app.UseStaticFiles();
 
             app.UseKentico();
-            app.UseRequestCulture();
+            
 
             app.UseCookiePolicy();
 
             app.UseCors();
+            app.UseRouting();
+
+            app.UseRequestCulture();
 
             // app.UseAuthentication();
             // app.UseAuthorization();
@@ -132,6 +135,16 @@ namespace MedioClinic
             app.UseEndpoints(endpoints =>
             {
                 endpoints.Kentico().MapRoutes();
+                endpoints.MapControllerRoute(
+                     name: "error",
+                    pattern: "{culture}/error/{code}",
+                    defaults: new { controller = "Error", action = "Index" },
+                    constraints: new
+                    {
+                        controller = ConventionalRoutingControllers
+                    });
+
+                endpoints.MapDefaultControllerRoute();
 
 
             });

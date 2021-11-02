@@ -1,0 +1,54 @@
+﻿@model PageViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>@Model?.Metadata.Title</title>
+    <link rel="shortcut icon" type="image/png" href="~/favicon.png" />
+    <meta name="description" content="@Model?.Metadata.Description" />
+    <meta name="keywords" content="@Model?.Metadata.Keywords" />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="@Model?.Metadata.Title" />
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <environment exclude="Development">
+        <link rel="stylesheet" href="~/css/materialize.min.css" asp-append-version="true" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <environment include="Development">
+        <link rel="stylesheet" href="~/css/materialize.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    @RenderSection("Styles", required: false)
+</head>
+<body>
+    <vc:navigation placement="Top" />
+
+    @if (Model?.UserMessage.Display == true && !string.IsNullOrEmpty(Model?.UserMessage.Message))
+    {
+        <section class="row section container">
+            @Html.DisplayFor(m => m.UserMessage)
+        </section>
+    }
+
+    @RenderBody()
+
+    <vc:footer />
+
+    @* The asp-fallback-test must contain a JavaScript expression that must return true, see https://github.com/aspnet/Mvc/issues/1576 *@
+    <environment exclude="Development">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+                asp-fallback-src="~/js/materialize.min.js"
+                asp-fallback-test="window.M"></script>
+    </environment>
+    <environment include="Development">
+        <script src="~/lib/materialize-src/js/bin/materialize.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
