@@ -24,15 +24,7 @@ namespace XperienceAdapter.Services
 
 		public IProgressiveCache ProgressiveCache { get; }
 
-        ISiteService IRepositoryServices.SiteService => throw new NotImplementedException();
-
-        IPageRetriever IRepositoryServices.PageRetriever => throw new NotImplementedException();
-
-        IPageUrlRetriever IRepositoryServices.PageUrlRetriever => throw new NotImplementedException();
-
-        IPageAttachmentUrlRetriever IRepositoryServices.PageAttachmentUrlRetriever => throw new NotImplementedException();
-
-        IProgressiveCache IRepositoryServices.ProgressiveCache => throw new NotImplementedException();
+      
 
 
         public RepositoryServices(
